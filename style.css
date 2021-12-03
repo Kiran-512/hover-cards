@@ -5,22 +5,67 @@
 }
 .header {
   text-align: center;
-  width :100%;  
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
+  top: 0;
   background: rgb(3, 3, 3);
-  height: 50px;
-  line-height: 50px;
-  font-size: 20px;
+  /* background-image: url(images/header.jpg); */
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 5vh;
   color: #fff;
-  text-shadow: 15px 10px 10px rgb(70, 70, 182), 15px 10px 10px rgb(173, 25, 57);
-  z-index: 2;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.header p {
+  margin-left: 21vw;
+  flex-basis: 80%;
+}
+nav {
+  flex-basis: 30%;
+}
+nav ul {
+  list-style: none;
+}
+.dropdown {
+  position: relative;
+}
+.dropdown a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2vh;
+}
+.dropdown-content a {
+  color: rgb(231, 233, 225);
+  font-size: 3vh;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content {
+  margin-top: -1vh;
+  width: 10vw;
+  height: 30vh;
+  margin-left: 30%;
+  background-image: url(images/Olive.jpg);
+  background-size: cover;
+  position: absolute;
+  display: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  box-shadow: 10px 10px 15px rgb(17, 16, 16);
 }
 .container {
   width: 100vw;
   min-height: 100vh;
   padding: 0 10vw;
-  margin-top: 31px;
-  background-color: #555;
+  margin-top: 10vh;
+  /* background-color: #555; */
+  background-image: url(images/Olive.jpg);
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -46,15 +91,17 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  font-size: 3vh;
   transform: translateX(10vw);
   z-index: 1;
 }
 
 .two {
   transform: translateX(-10vw);
-  background: rgb(12, 11, 11);
-  color: green;
+  background: rgb(182, 177, 177);
+  color: rgb(8, 8, 8);
   display: flex;
+  font-size: 1.5vh;
   justify-content: center;
   align-items: center;
 }
@@ -74,3 +121,55 @@ img {
   width: 10vw;
   height: 15vh;
 }
+
+/* ------side images---- */
+
+.side-images .side-images{
+  width: 30vw;
+  height: 40vh;
+  border-radius: 10px;
+  position: absolute;
+  /* display: none; */
+
+}
+.side1 {
+  top: 8vh;
+}
+.side2{
+  top: 8vh;
+  right: -1vw;
+}
+
+.side1-1{
+  top : 48vh;  
+}
+.side2-1 {
+top : 48vh;
+right: -1vw;
+}
+.side1-2{
+  top: 88vh;
+}
+.side2-2{
+  top: 88vh;
+  right: -1vw;
+}
+.side1-3{
+  top: 128vh;
+}
+.side2-3{
+  top: 128vh;
+  right: -1vw;
+}
+/* .dropdown-content.army:hover .side-images {
+  display: block;
+} */
+footer{
+
+  height: 10vh;
+  width: 100%;
+background-color: #000;
+text-align: center;
+line-height: 10vh;
+}
+
